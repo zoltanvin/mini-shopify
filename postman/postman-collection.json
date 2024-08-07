@@ -75,7 +75,7 @@
 								"exec": [
 									"pm.test(\"Service is listening\", function () {\r",
 									"    var responseBody = pm.response.text();\r",
-									"    var statusCodes = [404, 500];\r",
+									"    var statusCodes = [400, 404, 500];\r",
 									"    pm.expect(responseBody).not.to.include('Could not send request');\r",
 									"    pm.expect(statusCodes).not.to.include(pm.response.code);\r",
 									"});"
@@ -121,7 +121,7 @@
 								"exec": [
 									"pm.test(\"Service is listening\", function () {\r",
 									"    var responseBody = pm.response.text();\r",
-									"    var statusCodes = [404, 500];\r",
+									"    var statusCodes = [400, 404, 500];\r",
 									"    pm.expect(responseBody).not.to.include('Could not send request');\r",
 									"    pm.expect(statusCodes).not.to.include(pm.response.code);\r",
 									"});"
@@ -162,7 +162,7 @@
 								"exec": [
 									"pm.test(\"Service is listening\", function () {\r",
 									"    var responseBody = pm.response.text();\r",
-									"    var statusCodes = [404, 500];\r",
+									"    var statusCodes = [400, 404, 500];\r",
 									"    pm.expect(responseBody).not.to.include('Could not send request');\r",
 									"    pm.expect(statusCodes).not.to.include(pm.response.code);\r",
 									"});"
@@ -195,7 +195,7 @@
 								"exec": [
 									"pm.test(\"Service is listening\", function () {\r",
 									"    var responseBody = pm.response.text();\r",
-									"    var statusCodes = [404, 500];\r",
+									"    var statusCodes = [400, 404, 500];\r",
 									"    pm.expect(responseBody).not.to.include('Could not send request');\r",
 									"    pm.expect(statusCodes).not.to.include(pm.response.code);\r",
 									"});"
@@ -235,7 +235,7 @@
 								"exec": [
 									"pm.test(\"Service is listening\", function () {\r",
 									"    var responseBody = pm.response.text();\r",
-									"    var statusCodes = [404, 500];\r",
+									"    var statusCodes = [400, 404, 500];\r",
 									"    pm.expect(responseBody).not.to.include('Could not send request');\r",
 									"    pm.expect(statusCodes).not.to.include(pm.response.code);\r",
 									"});"
@@ -275,7 +275,7 @@
 								"exec": [
 									"pm.test(\"Service is listening\", function () {\r",
 									"    var responseBody = pm.response.text();\r",
-									"    var statusCodes = [404, 500];\r",
+									"    var statusCodes = [400, 404, 500];\r",
 									"    pm.expect(responseBody).not.to.include('Could not send request');\r",
 									"    pm.expect(statusCodes).not.to.include(pm.response.code);\r",
 									"});"
@@ -315,7 +315,7 @@
 								"exec": [
 									"pm.test(\"Service is listening\", function () {\r",
 									"    var responseBody = pm.response.text();\r",
-									"    var statusCodes = [404, 500];\r",
+									"    var statusCodes = [400, 404, 500];\r",
 									"    pm.expect(responseBody).not.to.include('Could not send request');\r",
 									"    pm.expect(statusCodes).not.to.include(pm.response.code);\r",
 									"});"
@@ -711,7 +711,7 @@
 									"    pm.expect(responseBody).to.include('Transaction completed successfully!');\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Status code is 200\", function (){\r",
+									"pm.test(\"Status code is 201\", function (){\r",
 									"    pm.response.to.have.status(201);\r",
 									"});"
 								],
@@ -765,7 +765,7 @@
 									"    pm.expect(responseBody).to.include('Oops! Something went wrong');\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Status code is 200\", function (){\r",
+									"pm.test(\"Status code is 201\", function (){\r",
 									"    pm.response.to.have.status(201);\r",
 									"});"
 								],
